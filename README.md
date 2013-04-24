@@ -1,6 +1,11 @@
 # maven-resolver
 
-Resolve maven artifacts non-transitively, for use in deploys, etc.
+Resolve maven artifacts non-transitively, for use in deploys, etc.  If the s3 or
+s3p wagons are on the classpath, they will be registered automatically with
+pomegranate.
+
+Note that this library will hopefully be obsoleted by
+https://github.com/cemerick/pomegranate/pull/57 or similar.
 
 ## Usage
 
