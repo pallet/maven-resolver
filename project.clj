@@ -1,4 +1,4 @@
-(defproject com.palletops/maven-resolver "0.1.0"
+(defproject com.palletops/maven-resolver "0.1.1-SNAPSHOT"
   :description "A library to resolve maven artifiacts."
   :url "http://palletops.com/"
   :license {:name "Eclipse Public License"
