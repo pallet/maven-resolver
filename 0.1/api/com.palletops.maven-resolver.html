@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <title>com.palletops.maven-resolver documentation</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <link href="css/codox-md.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/page_effects.js"></script>
+  </head>
+  <body>
+    <header>
+    <div data-scrollspy="scrollspy" class="topbar">
+      <div class="topbar-inner">
+        <div class="container">
+          <a href="/" class="brand">Pallet</a>
+          <ul class="nav">
+            <li class=""><a href="/doc">Documentation</a></li>
+            <li class=""><a href="/news">News</a></li>
+            <li class=""><a href="/blog">Blog</a></li>
+            <li class=""><a href="https://github.com/pallet/pallet">Code</a></li>
+            <li class=""><a href="/services">Services</a></li>
+            <li class=""><a href="/support">Support</a></li>
+            <li class=""><a href="/contact">Contact</a></li>
+          </ul>
+          <form action="http://www.google.com/search" method="get" class="pull-right">
+            <input placeholder="Search" value="" maxlength="255" name="q" type="text" />
+            <input value="palletops.com" type="hidden" name="sitesearch" />
+          </form>
+        </div>
+      </div>
+    </div>
+      <div id="header">
+        <h1><a href="http://palletops.com"><span class="project-title">Maven-resolver 0.1.1-SNAPSHOT API documentation</span></a></h1>
+      </div>
+    </header>
+    <navigation>
+      <div id="namespaces" class="sidebar">
+        <h3>Namespaces</h3>
+        <ul class="ns-links">
+          <li class="ns-list"><a class="ns-link ns-name" href="com.palletops.maven-resolver.html">com.palletops.maven-resolver</a></li>
+        </ul>
+      </div>
+      <div id="vars" class="sidebar">
+        <h3>Public Vars</h3>
+        <ul class="ns-var-links">
+          <li class="ns-var-list"><a class="ns-var-link ns-var-name" href="com.palletops.maven-resolver.html#var-register-if-available">register-if-available</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="com.palletops.maven-resolver.html#var-resolve-artifacts">resolve-artifacts</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="com.palletops.maven-resolver.html#var-resolve-artifacts*">resolve-artifacts*</a></li><li class="ns-var-list"><a class="ns-var-link ns-var-name" href="com.palletops.maven-resolver.html#var-resolve-coordinates">resolve-coordinates</a></li>
+        </ul>
+      </div>
+    </navigation>
+    <article>
+      <div id="content" class="namespace-docs">
+        <h2 class="namespace-title">com.palletops.maven-resolver documentation</h2>
+        <div class="doc"><p>Resolve maven dependencies with aether.</p>
+</div>
+        <div class="ns-vars">
+          <div class="public">
+            <h3><a id="var-register-if-available" class="source var-name" href="https://github.com/pallet/pallet/blob/develop/src/com/palletops/maven_resolver.clj#L14">register-if-available</a></h3>
+            <h4 class="var-type macro" id="var-type">macro</h4>
+            <div class="usage">[scheme class-sym]</div>
+            
+            
+            <div class="doc"><p>Register the specified scheme using the wagon class if it is on the
+classpath.</p>
+</div>
+          </div><div class="public">
+            <h3><a id="var-resolve-artifacts" class="source var-name" href="https://github.com/pallet/pallet/blob/develop/src/com/palletops/maven_resolver.clj#L92">resolve-artifacts</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[&amp; args]</div>
+            
+            
+            <div class="doc"><p>Same as <code>resolve-artifacts*</code>, but returns a sequence of files on disk. </p>
+</div>
+          </div><div class="public">
+            <h3><a id="var-resolve-artifacts*" class="source var-name" href="https://github.com/pallet/pallet/blob/develop/src/com/palletops/maven_resolver.clj#L44">resolve-artifacts*</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[&amp; {:keys [repositories coordinates files retrieve local-repo transfer-listener offline? proxy mirrors repository-session-fn], :or {retrieve true}}]</div>
+            
+            
+            <div class="doc"><p>Resolves artifacts for the coordinates kwarg, using repositories from the
+<code>:repositories</code> kwarg.</p>
+
+<p>If you don't want to mess with the Aether implmeentation classes, then use
+<code>resolve-artifacts</code> instead.</p>
+
+<p>Options are as for pomegranate's
+<a href="https://github.com/cemerick/pomegranate/blob/master/src/main/clojure/cemerick/pomegranate/aether.clj#L484"><code>resolve-dependencies*</code></a></p>
+</div>
+          </div><div class="public">
+            <h3><a id="var-resolve-coordinates" class="source var-name" href="https://github.com/pallet/pallet/blob/develop/src/com/palletops/maven_resolver.clj#L101">resolve-coordinates</a></h3>
+            <h4 class="var-type fn" id="var-type">fn</h4>
+            <div class="usage">[coordinates {:keys [repositories local-repo], :as options}]</div>
+            
+            
+            <div class="doc"><p>Resolve a sequence of coordinate vectors into a local repository, and return
+the local file path.</p>
+
+<p><code>:local-repo</code>
+: a path to locate the local repository to resolve into.</p>
+
+<p><code>:repositories</code>
+: a map of leiningen style repository definitions.</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+
+</html>
