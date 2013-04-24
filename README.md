@@ -11,7 +11,7 @@ function.
 Add the following to your `:dependencies`:
 
 ```clj
-[com.palletops/maven-resolver "0.1.0-SNAPSHOT"
+[com.palletops/maven-resolver "0.1.0"]
 ```
 
 ## License
